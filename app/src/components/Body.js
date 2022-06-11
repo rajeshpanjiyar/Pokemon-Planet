@@ -18,7 +18,6 @@ export default function Body() {
     Axios.get(
       `https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase()}`
     ).then((response) => {
-      //   console.log(response);
       setPokemon({
         name: pokemonName,
         species: response.data.species.name,
